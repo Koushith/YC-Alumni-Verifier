@@ -22,7 +22,8 @@ dotenv_1.default.config();
 (0, connect_js_1.connectDb)();
 const app = (0, express_1.default)();
 const port = process.env.PORT || 8000;
-const callbackUrl = "192.168.241.81:8000" + "/" + "callback/";
+//todo- move this to .env
+const callbackUrl = "https://yc-alumni-verifier-production.up.railway.app/" + "/" + "callback/";
 const reclaim = new reclaim_sdk_1.Reclaim(callbackUrl);
 app.use(express_1.default.json());
 app.use((0, cors_1.default)());

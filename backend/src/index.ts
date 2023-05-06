@@ -11,7 +11,9 @@ connectDb();
 const app: Express = express();
 const port = process.env.PORT || 8000;
 
-const callbackUrl = "192.168.241.81:8000" + "/" + "callback/";
+//todo- move this to .env
+const callbackUrl =
+  "https://yc-alumni-verifier-production.up.railway.app/" + "/" + "callback/";
 
 const reclaim = new Reclaim(callbackUrl);
 

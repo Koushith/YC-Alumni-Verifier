@@ -7,9 +7,11 @@ import QrMessage from "./QrMessage";
 import Device from "./static/Device";
 import Gift from "./static/Svg/Gift";
 
-const getCallbackUrl = "192.168.241.81:8000" + "/home";
+const getCallbackUrl =
+  "https://yc-alumni-verifier-production.up.railway.app/" + "/home";
 console.log(getCallbackUrl);
-const statusUrl = "192.168.241.81:8000" + "/status";
+const statusUrl =
+  "https://yc-alumni-verifier-production.up.railway.app/" + "/status";
 console.log(statusUrl);
 
 export default function Main() {
@@ -19,7 +21,8 @@ export default function Main() {
 
   const getStatus = async (callbackId: string) => {
     const response = await axios.get(
-      "http://192.168.241.81:8000/status" + `/${callbackId}`
+      "https://yc-alumni-verifier-production.up.railway.app/status" +
+        `/${callbackId}`
     );
     setStatus(response.data.status);
   };
