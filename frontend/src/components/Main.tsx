@@ -32,9 +32,12 @@ export default function Main() {
       email: input.email,
     };
     return toast.promise(
-      axios.get("http://192.168.241.81:8000/home" + "/yc", {
-        params,
-      }),
+      axios.get(
+        "https://yc-alumni-verifier-production.up.railway.app/home" + "/yc",
+        {
+          params,
+        }
+      ),
       {
         loading: "Loading..",
         error: (error) => handleError(error),
