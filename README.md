@@ -88,6 +88,10 @@ Contributions are welcome! To contribute to AlumVerify, please follow these step
 - Submit a pull request to the main repository.
 - Please ensure that your code adheres to the existing coding standards and includes appropriate documentation.
 
+#### Credits
+
+- Original code was forked from QuestBook repo.
+
 #### License
 
 MIT License
