@@ -3,6 +3,8 @@ YC-Alumni-Verifier
 #### Screenshots
 
 ![image](https://user-images.githubusercontent.com/30016242/236688224-a7208aac-c763-4686-92eb-7e1144d21d9d.png)
+![image](https://user-images.githubusercontent.com/30016242/236688878-cb9541ab-7585-45f0-acc2-c7a3b50c4389.png)
+
 
 AlumVerify is a web application that simplifies and streamlines the verification process for YC alumni.
 Built using ReclaimProtocol, React, Node.js with Express, and MongoDB, AlumVerify offers a robust platform for verifying and connecting with alumni.
