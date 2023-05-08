@@ -28,6 +28,7 @@ const connectDb = () => __awaiter(void 0, void 0, void 0, function* () {
 exports.connectDb = connectDb;
 const submittedLinkSchema = new mongoose_1.default.Schema({
     callback_id: { type: String, required: true },
+    claims: { type: Boolean, required: false },
     status: { type: String, required: true },
     email: { type: String, required: true },
     template_id: { type: String, required: false },

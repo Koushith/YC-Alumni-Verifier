@@ -119,6 +119,7 @@ app.post("/callback/:id", (req, res) => __awaiter(void 0, void 0, void 0, functi
     }
     const callbackId = req.params.id;
     const claims = { claims: reqBody.claims };
+    console.log("claimsssss", claims);
     try {
         const results = yield connect_js_1.SubmittedLink.find({
             callback_id: callbackId,
@@ -134,7 +135,7 @@ app.post("/callback/:id", (req, res) => __awaiter(void 0, void 0, void 0, functi
         return;
     }
     try {
-        yield connect_js_1.SubmittedLink.findByIdAndUpdate({ callback_id: callbackId }, { status: "verified" });
+        yield connect_js_1.SubmittedLink.findByIdAndUpdate({ callback_id: callbackId }, { status: "verified", claims: claims });
     }
     catch (e) {
         res.status(500).send(`500 - Internal Server Error - ${e}`);

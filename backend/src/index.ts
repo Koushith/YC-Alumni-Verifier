@@ -133,6 +133,8 @@ app.post("/callback/:id", async (req: Request, res: Response) => {
 
   const claims = { claims: reqBody.claims };
 
+  console.log("claimsssss", claims);
+
   try {
     const results = await SubmittedLink.find({
       callback_id: callbackId,
@@ -151,7 +153,7 @@ app.post("/callback/:id", async (req: Request, res: Response) => {
   try {
     await SubmittedLink.findByIdAndUpdate(
       { callback_id: callbackId },
-      { status: "verified" }
+      { status: "verified", claims: claims }
     );
   } catch (e) {
     res.status(500).send(`500 - Internal Server Error - ${e}`);

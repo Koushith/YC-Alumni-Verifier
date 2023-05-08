@@ -16,6 +16,7 @@ export const connectDb = async () => {
 
 const submittedLinkSchema = new mongoose.Schema({
   callback_id: { type: String, required: true },
+  claims: { type: Boolean, required: false },
   status: { type: String, required: true },
   email: { type: String, required: true },
   template_id: { type: String, required: false },
