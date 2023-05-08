@@ -43,7 +43,7 @@ app.get("/home/yc", (req, res) => __awaiter(void 0, void 0, void 0, function* ()
         {
             provider: "yc-login",
             params: {
-            // email: emailStr,
+                email: emailStr,
             },
         },
     ])).generateTemplate(callbackId);

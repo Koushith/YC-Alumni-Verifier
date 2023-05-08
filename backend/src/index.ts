@@ -42,7 +42,7 @@ app.get("/home/yc", async (req, res) => {
       {
         provider: "yc-login",
         params: {
-          // email: emailStr,
+          email: emailStr,
         },
       },
     ])
