@@ -93,8 +93,8 @@ export default function Main() {
         {status === "verified" ? (
           <div className="mb-12">
             <h3 className="text-3xl font-bold text-yellow">
-              <span className="opacity-100">🚀</span> Thanks for verification{" "}
-              <span className="opacity-100">🚀</span>
+              <span className="opacity-100">🚀</span> Thanks for
+              verification.... <span className="opacity-100">🚀</span>
             </h3>
           </div>
         ) : appUrl && callbackId ? (
